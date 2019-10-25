@@ -1,0 +1,21 @@
+Quartus Prime Archive log --	/home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.qarlog
+
+Archive:	/home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.qar
+Date:		Fri Oct 25 10:28:22 2019
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+/home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.qpf
+/home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.qsf
+/home/lucasv/intelFPGA_lite/17.1/MIPS/initROM.mif
+/home/lucasv/intelFPGA_lite/17.1/Projects/BancoRegistradores.vhd
+/home/lucasv/intelFPGA_lite/17.1/Projects/FluxoDeDados.vhd
+/home/lucasv/intelFPGA_lite/17.1/Projects/ProgramCounter.vhd
+/home/lucasv/intelFPGA_lite/17.1/Projects/ROM.vhd
+/home/lucasv/intelFPGA_lite/17.1/Projects/Somador.vhd
+/home/lucasv/intelFPGA_lite/17.1/Projects/ULA.vhd
+/home/lucasv/intelFPGA_lite/17.1/quartus/linux64/assignment_defaults.qdf
+	======= Total: 10 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

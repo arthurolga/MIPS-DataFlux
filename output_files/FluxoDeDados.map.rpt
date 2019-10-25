@@ -1,0 +1,450 @@
+Analysis & Synthesis report for FluxoDeDados
+Fri Oct 25 10:36:02 2019
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |FluxoDeDados
+ 11. Parameter Settings for User Entity Instance: ULA:ULA1
+ 12. Parameter Settings for User Entity Instance: BancoRegistradores:BR1
+ 13. Parameter Settings for User Entity Instance: ROM:ROM1
+ 14. Parameter Settings for User Entity Instance: ProgramCounter:PC1
+ 15. Port Connectivity Checks: "ProgramCounter:PC1"
+ 16. Port Connectivity Checks: "ROM:ROM1"
+ 17. Post-Synthesis Netlist Statistics for Top Partition
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Oct 25 10:36:02 2019       ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                      ; FluxoDeDados                                ;
+; Top-level Entity Name              ; FluxoDeDados                                ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 41                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; FluxoDeDados       ; FluxoDeDados       ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; VHDL Show LMF Mapping Messages                                             ; Off                ;                    ;
+; VHDL Version                                                               ; VHDL_2008          ; VHDL_1993          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                              ; Enable             ; Enable             ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                                        ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                      ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
+; ROM_MIPS.vhd                     ; yes             ; User VHDL File  ; /home/lucasv/intelFPGA_lite/17.1/MIPS/ROM_MIPS.vhd                ;         ;
+; ULA_MIPS.vhd                     ; yes             ; User VHDL File  ; /home/lucasv/intelFPGA_lite/17.1/MIPS/ULA_MIPS.vhd                ;         ;
+; BancoRegistradores_MIPS.vhd      ; yes             ; User VHDL File  ; /home/lucasv/intelFPGA_lite/17.1/MIPS/BancoRegistradores_MIPS.vhd ;         ;
+; ProgramCounter_MIPS.vhd          ; yes             ; User VHDL File  ; /home/lucasv/intelFPGA_lite/17.1/MIPS/ProgramCounter_MIPS.vhd     ;         ;
+; FluxoDeDados.vhd                 ; yes             ; User VHDL File  ; /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd            ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+;                                             ;          ;
+; Total combinational functions               ; 0        ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 0        ;
+;     -- 3 input functions                    ; 0        ;
+;     -- <=2 input functions                  ; 0        ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 0        ;
+;     -- arithmetic mode                      ; 0        ;
+;                                             ;          ;
+; Total registers                             ; 0        ;
+;     -- Dedicated logic registers            ; 0        ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 41       ;
+;                                             ;          ;
+; Embedded Multiplier 9-bit elements          ; 0        ;
+;                                             ;          ;
+; Maximum fan-out node                        ; CLOCK_50 ;
+; Maximum fan-out                             ; 1        ;
+; Total fan-out                               ; 41       ;
+; Average fan-out                             ; 0.50     ;
++---------------------------------------------+----------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                       ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name  ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
+; |FluxoDeDados              ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 41   ; 0            ; |FluxoDeDados       ; FluxoDeDados ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; ProgramCounter:PC1|DOUT[0..4]         ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 5 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |FluxoDeDados ;
++-------------------+-------+--------------------------------------------------+
+; Parameter Name    ; Value ; Type                                             ;
++-------------------+-------+--------------------------------------------------+
+; enderecosIntrucao ; 5     ; Signed Integer                                   ;
+; tamanhoFunct      ; 6     ; Signed Integer                                   ;
+; tamanhoOpCode     ; 6     ; Signed Integer                                   ;
+; tamanhoReg        ; 5     ; Signed Integer                                   ;
+; tamanhoInstrucao  ; 32    ; Signed Integer                                   ;
+; larguraDados      ; 32    ; Signed Integer                                   ;
++-------------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULA1 ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; larguradados   ; 32    ; Signed Integer               ;
+; qtdop          ; 6     ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BancoRegistradores:BR1 ;
++---------------------+-------+---------------------------------------+
+; Parameter Name      ; Value ; Type                                  ;
++---------------------+-------+---------------------------------------+
+; larguradados        ; 32    ; Signed Integer                        ;
+; larguraendbancoregs ; 5     ; Signed Integer                        ;
++---------------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ROM:ROM1 ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; datawidth      ; 32    ; Signed Integer               ;
+; addrwidth      ; 5     ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProgramCounter:PC1 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; larguradados   ; 5     ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "ProgramCounter:PC1" ;
++------+-------+----------+----------------------+
+; Port ; Type  ; Severity ; Details              ;
++------+-------+----------+----------------------+
+; rst  ; Input ; Info     ; Stuck at GND         ;
++------+-------+----------+----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ROM:ROM1"                                                                                  ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; dado[10..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 41                          ;
+; cycloneiii_lcell_comb ; 1                           ;
+;     normal            ; 1                           ;
+;         0 data inputs ; 1                           ;
+;                       ;                             ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Fri Oct 25 10:35:52 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FluxoDeDados -c FluxoDeDados
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file ROM_MIPS.vhd
+    Info (12022): Found design unit 1: ROM-initFileROM File: /home/lucasv/intelFPGA_lite/17.1/MIPS/ROM_MIPS.vhd Line: 20
+    Info (12023): Found entity 1: ROM File: /home/lucasv/intelFPGA_lite/17.1/MIPS/ROM_MIPS.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file ULA_MIPS.vhd
+    Info (12022): Found design unit 1: ULA-Behavioral File: /home/lucasv/intelFPGA_lite/17.1/MIPS/ULA_MIPS.vhd Line: 19
+    Info (12023): Found entity 1: ULA File: /home/lucasv/intelFPGA_lite/17.1/MIPS/ULA_MIPS.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file BancoRegistradores_MIPS.vhd
+    Info (12022): Found design unit 1: BancoRegistradores-comportamento File: /home/lucasv/intelFPGA_lite/17.1/MIPS/BancoRegistradores_MIPS.vhd Line: 30
+    Info (12023): Found entity 1: BancoRegistradores File: /home/lucasv/intelFPGA_lite/17.1/MIPS/BancoRegistradores_MIPS.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file Somador_MIPS.vhd
+    Info (12022): Found design unit 1: Somador-comportamento File: /home/lucasv/intelFPGA_lite/17.1/MIPS/Somador_MIPS.vhd Line: 18
+    Info (12023): Found entity 1: Somador File: /home/lucasv/intelFPGA_lite/17.1/MIPS/Somador_MIPS.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file ProgramCounter_MIPS.vhd
+    Info (12022): Found design unit 1: ProgramCounter-comportamento File: /home/lucasv/intelFPGA_lite/17.1/MIPS/ProgramCounter_MIPS.vhd Line: 15
+    Info (12023): Found entity 1: ProgramCounter File: /home/lucasv/intelFPGA_lite/17.1/MIPS/ProgramCounter_MIPS.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file FluxoDeDados.vhd
+    Info (12022): Found design unit 1: FLuxoDeDados-Behavioral File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 27
+    Info (12023): Found entity 1: FluxoDeDados File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 6
+Info (12127): Elaborating entity "FluxoDeDados" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at FluxoDeDados.vhd(22): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 22
+Warning (10541): VHDL Signal Declaration warning at FluxoDeDados.vhd(23): used implicit default value for signal "LEDG" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 23
+Warning (10541): VHDL Signal Declaration warning at FluxoDeDados.vhd(32): used implicit default value for signal "saida_somador" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 32
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA1" File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 38
+Warning (10541): VHDL Signal Declaration warning at ULA_MIPS.vhd(13): used implicit default value for signal "outO" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/lucasv/intelFPGA_lite/17.1/MIPS/ULA_MIPS.vhd Line: 13
+Info (12128): Elaborating entity "BancoRegistradores" for hierarchy "BancoRegistradores:BR1" File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 60
+Info (12128): Elaborating entity "ROM" for hierarchy "ROM:ROM1" File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 80
+Warning (10541): VHDL Signal Declaration warning at ROM_MIPS.vhd(23): used implicit default value for signal "content" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/lucasv/intelFPGA_lite/17.1/MIPS/ROM_MIPS.vhd Line: 23
+Info (12128): Elaborating entity "ProgramCounter" for hierarchy "ProgramCounter:PC1" File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 94
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276007): RAM logic "ROM:ROM1|content" is uninferred due to asynchronous read logic File: /home/lucasv/intelFPGA_lite/17.1/MIPS/ROM_MIPS.vhd Line: 23
+Warning (113016): Width of data items in "initROM.mif" is smaller than the memory width. Padding data items with 0 on MSB to fit in memory.  File: /home/lucasv/intelFPGA_lite/17.1/MIPS/initROM.mif Line: 20
+Warning (113028): 254 out of 256 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: /home/lucasv/intelFPGA_lite/17.1/MIPS/initROM.mif Line: 1
+    Warning (113027): Addresses ranging from 2 to 255 are not initialized File: /home/lucasv/intelFPGA_lite/17.1/MIPS/initROM.mif Line: 1
+Critical Warning (127004): Memory depth (32) in the design file differs from memory depth (256) in the Memory Initialization File "/home/lucasv/intelFPGA_lite/17.1/MIPS/initROM.mif" -- truncated remaining initial content value to fit RAM
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "opCode[0]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 21
+    Warning (13410): Pin "opCode[1]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 21
+    Warning (13410): Pin "opCode[2]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 21
+    Warning (13410): Pin "opCode[3]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 21
+    Warning (13410): Pin "opCode[4]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 21
+    Warning (13410): Pin "opCode[5]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 21
+    Warning (13410): Pin "LEDR[0]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 22
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 22
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 22
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 22
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 22
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 22
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 22
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 22
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 22
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 22
+    Warning (13410): Pin "LEDR[10]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 22
+    Warning (13410): Pin "LEDR[11]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 22
+    Warning (13410): Pin "LEDR[12]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 22
+    Warning (13410): Pin "LEDR[13]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 22
+    Warning (13410): Pin "LEDR[14]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 22
+    Warning (13410): Pin "LEDR[15]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 22
+    Warning (13410): Pin "LEDR[16]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 22
+    Warning (13410): Pin "LEDR[17]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 22
+    Warning (13410): Pin "LEDG[0]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 23
+    Warning (13410): Pin "LEDG[1]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 23
+    Warning (13410): Pin "LEDG[2]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 23
+    Warning (13410): Pin "LEDG[3]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 23
+    Warning (13410): Pin "LEDG[4]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 23
+    Warning (13410): Pin "LEDG[5]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 23
+    Warning (13410): Pin "LEDG[6]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 23
+    Warning (13410): Pin "LEDG[7]" is stuck at GND File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 23
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 9 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "CLOCK_50" File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 17
+    Warning (15610): No output dependent on input pin "inPC" File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 18
+    Warning (15610): No output dependent on input pin "operationULA[0]" File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 19
+    Warning (15610): No output dependent on input pin "operationULA[1]" File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 19
+    Warning (15610): No output dependent on input pin "operationULA[2]" File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 19
+    Warning (15610): No output dependent on input pin "operationULA[3]" File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 19
+    Warning (15610): No output dependent on input pin "operationULA[4]" File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 19
+    Warning (15610): No output dependent on input pin "operationULA[5]" File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 19
+    Warning (15610): No output dependent on input pin "enableWriteBR" File: /home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.vhd Line: 20
+Info (21057): Implemented 41 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
+    Info (21059): Implemented 32 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 53 warnings
+    Info: Peak virtual memory: 975 megabytes
+    Info: Processing ended: Fri Oct 25 10:36:02 2019
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:20
+
+
