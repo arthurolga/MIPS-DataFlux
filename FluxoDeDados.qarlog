@@ -1,21 +1,25 @@
-Quartus Prime Archive log --	/home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.qarlog
+Quartus Prime Archive log --	C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados.qarlog
 
-Archive:	/home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.qar
-Date:		Fri Oct 25 10:28:22 2019
-Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Archive:	C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados.qar
+Date:		Fri Oct 25 16:41:44 2019
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 	=========== Files Selected: ===========
-/home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.qpf
-/home/lucasv/intelFPGA_lite/17.1/MIPS/FluxoDeDados.qsf
-/home/lucasv/intelFPGA_lite/17.1/MIPS/initROM.mif
-/home/lucasv/intelFPGA_lite/17.1/Projects/BancoRegistradores.vhd
-/home/lucasv/intelFPGA_lite/17.1/Projects/FluxoDeDados.vhd
-/home/lucasv/intelFPGA_lite/17.1/Projects/ProgramCounter.vhd
-/home/lucasv/intelFPGA_lite/17.1/Projects/ROM.vhd
-/home/lucasv/intelFPGA_lite/17.1/Projects/Somador.vhd
-/home/lucasv/intelFPGA_lite/17.1/Projects/ULA.vhd
-/home/lucasv/intelFPGA_lite/17.1/quartus/linux64/assignment_defaults.qdf
-	======= Total: 10 files to archive =======
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/MIPS/Conv7segvhd.vhd
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/MIPS/FluxoDeDados.qpf
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/MIPS/FluxoDeDados.qsf
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/MIPS/FluxoDeDados_assignment_defaults.qdf
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/MIPS/Waveform.vwf
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/MIPS/Waveform1.vwf
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/MIPS/assignment_defaults.qdf
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/MIPS/initROM.mif
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/Projects/BancoRegistradores.vhd
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/Projects/FluxoDeDados.vhd
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/Projects/ProgramCounter.vhd
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/Projects/ROM.vhd
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/Projects/Somador.vhd
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/Projects/ULA.vhd
+	======= Total: 14 files to archive =======
 
 	================ Status: ===============
 All files archived successfully.
