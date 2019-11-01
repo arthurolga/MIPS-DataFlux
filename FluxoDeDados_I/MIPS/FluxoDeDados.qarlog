@@ -1,0 +1,37 @@
+Quartus Prime Archive log --	C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/MIPS/FluxoDeDados.qarlog
+
+Archive:	C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/MIPS/FluxoDeDados.qar
+Date:		Fri Oct 25 16:40:07 2019
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/MIPS/Conv7segvhd.vhd
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/MIPS/FluxoDeDados.qpf
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/MIPS/FluxoDeDados.qsf
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/MIPS/FluxoDeDados_assignment_defaults.qdf
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/MIPS/Waveform.vwf
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/MIPS/Waveform1.vwf
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/MIPS/assignment_defaults.qdf
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/MIPS/initROM.mif
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/Projects/BancoRegistradores.vhd
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/Projects/FluxoDeDados.vhd
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/Projects/ProgramCounter.vhd
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/Projects/ROM.vhd
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/Projects/Somador.vhd
+C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_restored/Projects/ULA.vhd
+	======= Total: 14 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Wed Oct 30 09:27:48 2019
+Source archive file:	C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_I/MIPS/FluxoDeDados.qar
+Archive was extracted into	C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_I/MIPS/FluxoDeDados_restored/
+		 - successfully.
+
+
+******* Archived project restoration attempt on Fri Nov 01 11:36:29 2019
+Source archive file:	C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_I/MIPS/FluxoDeDados.qar
+Archive was extracted into	C:/Users/brune/OneDrive/Documentos/Insper/DesComp/MIPS-DataFlux/FluxoDeDados_I/MIPS/
+		 - successfully.

@@ -1,0 +1,7 @@
+{
+	"common_dir" : "/home/lucasv/intelFPGA_lite/17.1/",
+	"acds_version" : "Version 17.1.0",
+	"platform" : "linux",
+	"os" : "Ubuntu 16.04.4",
+	"qpf" : "MIPS/FluxoDeDados.qpf"
+}
